@@ -1,0 +1,28 @@
+Body{
+    
+}
+
+nav
+{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+ul
+{
+    display: inline-block;
+    text-align: left;
+    text-align: right;
+}
+
+li
+{
+    display: inline-block;
+    text-align: left;
+}
