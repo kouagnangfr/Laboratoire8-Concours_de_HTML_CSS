@@ -1,28 +1,251 @@
-Body{
-    
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+html
+{
+    font-family: "Poppins", serif;
+    max-height: 50vh;
+}
+
+body
+{
+    display: block;
+    min-height: 200vh;
+    background: whitesmoke;   
+}
+
+header
+{
+    display: block;
+    width:100%;
+    flex-direction: column;
+    font-family: "Kaushan Script";
 }
 
 nav
 {
+    position: relative;
+    width:auto;
+    height: 10em;
+    background: white;
     display: flex;
-    flex-direction: column;
-    text-align: right;
+    align-items: top;
+    justify-content: left;
 }
+
+.logo a 
+{
+    display: flex;
+    font-size: 2em;
+    font-family: "Kaushan Script", cursive, serif;
+    color: black;
+    font-weight: 900;
+    text-transform: capitalize;
+    padding-left: 2.5em;
+    margin-right: 8em;
+    padding-top: 2em;
+}
+
+.logo a span
+{
+    color: #00a15e;
+}
+
+.logo a span:hover 
+{    
+    color: #cc9900;   
+}
+
+
+
+.navigation-bar
+{
+    display: flex;
+    align-items: right;
+    font-weight: bold;
+
+}
+
+.navigation-bar li
+{
+    
+    flex-direction: row;
+    position: relative;
+    list-style: none;
+    padding-right: 3em;
+
+}
+.navigation-bar li a
+{
+    color: #00a15e;
+}
+
+.icon
+{
+    font-size: 1.2em;
+}
+
 
 a
 {
     text-decoration: none;
 }
 
-ul
+.active-down
 {
     display: inline-block;
-    text-align: left;
-    text-align: right;
+    left: 0;
+    bottom: 0; 
+    height: 0.4em;
+    width: 45%;
+    border-radius: 30%;
+    margin-top: 8px;
+    background-color: #00a15e;
+    opacity: 0;
+    visibility: 0;
+    transition: all 0.9s ease-out 0.3s;
 }
 
-li
+.active-down::after
+{
+    position: absolute;
+    content: " ";
+    height: 0.25em;
+    left: 45%;
+    width: 5%;
+    border-radius: 30%;
+    background-color: #00a15e;
+   
+
+}
+
+.active-down::before
+{
+    position: absolute;
+    content: " ";
+    height: 0.3em;
+    left: 33%;
+    width: 10%;
+    background-color: #00a15e;
+    border-radius: 30%;
+}
+
+.active-up
+{
+    display: block;
+    height: 30%;
+    left: 0;
+    bottom: 0;
+    width: 0.4em;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+    margin-bottom: 14px;
+    margin-left: 48%;
+    opacity: 0;
+    visibility: 0 ;
+    background-color: #00a15e;
+    transition: all 0.9s ease-in-out 0.3s;
+}
+
+.navigation-bar a.active > .active-down, .navigation-bar a:hover > .active-down
+{
+    opacity: 1;
+    visibility: visible;
+}
+
+.navigation-bar a.active > .active-up, .navigation-bar a:hover > .active-up
+{
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+                                   /*-----Main-----*/
+main .description
 {
     display: inline-block;
-    text-align: left;
+    width: 49.5%;
+    height: 68vh;
+    background-color: whitesmoke;
+    margin-right: 0px;
+}
+
+main .picture
+{
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    width: 50%;
+    top: 1;
+    height: 68vh;
+    background-color: whitesmoke;
+}
+
+main .picture::after
+{
+    position: absolute;
+    content: '';
+    width: 1000%;
+    height: 100%;
+    background-color: #00a15e;  
+    transform: skewX(45deg);
+    top: 0;
+    left:0;
+}
+
+.cercle
+{
+    background: whitesmoke;
+    position: relative;
+    z-index: 2;
+    border-radius: 50%;
+    width: 160px;
+    height: 160px;
+    border:2px solid #00a15e
+}
+
+main .picture img
+{
+    position: relative;
+    width: 100%;
+    z-index: 4;
+    background-color: #00a15e;
+   
+
+}
+
+
+
+
+                                  /*-----Footer-----*/
+footer
+{
+    display: flex;
+    flex-direction: column;
+    background-color: #00a15e;
+    padding: 1em;
+    color: white;
+    font-family: "Kaushan Script", cursive, sans-serif;
+    font-weight: bold;
+    font-size: 1.2em;
+    align-items: center;
+}
+footer p
+{
+    margin-top: 5px;
+}
+/*-----ADAPTTION-----*/
+@media (min-width: 700px)
+{
+    aside span
+    {
+        display: inline;
+    }   
+
+    .advert
+{
+    display: flex;
+    flex-direction: row;
+}
 }
