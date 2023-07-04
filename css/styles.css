@@ -7,234 +7,512 @@ html
     max-height: 50vh;
 }
 
+/******Root********/
+html
+{
+    scroll-behavior: smooth;
+}
+:root
+{
+    --main-color: #00a15e;;
+    --shadow-black-100:0 5px 15px rgba(0,0,0,0.2);
+    --black-900:#000;
+    --black-400:#646f87;
+    --black-alpha-100:rgba(0,0,0,.05);
+}
 body
 {
-    display: block;
-    min-height: 200vh;
-    background: whitesmoke;   
+    font-family: "Kaushan Script", cursive;
+    font-size: 16px;
+    font-weight: normal;
+    overflow-x: hidden;
+    background-color: var(--white);
 }
 
 header
 {
     display: block;
-    width:100%;
-    flex-direction: column;
-    font-family: "Kaushan Script";
-}
-
-nav
-{
-    position: relative;
-    width:auto;
-    height: 10em;
-    background: white;
-    display: flex;
-    align-items: top;
-    justify-content: left;
-}
-
-.logo a 
-{
-    display: flex;
-    font-size: 2em;
-    font-family: "Kaushan Script", cursive, serif;
-    color: black;
-    font-weight: 900;
-    text-transform: capitalize;
-    padding-left: 2.5em;
-    margin-right: 8em;
-    padding-top: 2em;
-}
-
-.logo a span
-{
-    color: #00a15e;
-}
-
-.logo a span:hover 
-{    
-    color: #cc9900;   
-}
-
-
-
-.navigation-bar
-{
-    display: flex;
-    align-items: right;
-    font-weight: bold;
-
-}
-
-.navigation-bar li
-{
     
-    flex-direction: row;
-    position: relative;
-    list-style: none;
-    padding-right: 3em;
-
 }
-.navigation-bar li a
+
+*
 {
-    color: #00a15e;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+ul
+{
+    list-style: none;
 }
 
 .icon
 {
     font-size: 1.2em;
 }
-
-
-a
+.login-icon
 {
-    text-decoration: none;
+    font-size: 2em;
+    color: var(--main-color);
 }
 
-.active-down
+section
 {
-    display: inline-block;
-    left: 0;
-    bottom: 0; 
-    height: 0.4em;
-    width: 45%;
-    border-radius: 30%;
-    margin-top: 8px;
-    background-color: #00a15e;
-    opacity: 0;
-    visibility: 0;
-    transition: all 0.9s ease-out 0.3s;
+    padding: 80px 0;
+    border-bottom: 2px solid var(--main-color);
 }
-
-.active-down::after
-{
-    position: absolute;
-    content: " ";
-    height: 0.25em;
-    left: 45%;
-    width: 5%;
-    border-radius: 30%;
-    background-color: #00a15e;
-   
-
-}
-
-.active-down::before
-{
-    position: absolute;
-    content: " ";
-    height: 0.3em;
-    left: 33%;
-    width: 10%;
-    background-color: #00a15e;
-    border-radius: 30%;
-}
-
-.active-up
-{
-    display: block;
-    height: 30%;
-    left: 0;
-    bottom: 0;
-    width: 0.4em;
-    border-bottom-left-radius: 10%;
-    border-bottom-right-radius: 10%;
-    margin-bottom: 14px;
-    margin-left: 48%;
-    opacity: 0;
-    visibility: 0 ;
-    background-color: #00a15e;
-    transition: all 0.9s ease-in-out 0.3s;
-}
-
-.navigation-bar a.active > .active-down, .navigation-bar a:hover > .active-down
-{
-    opacity: 1;
-    visibility: visible;
-}
-
-.navigation-bar a.active > .active-up, .navigation-bar a:hover > .active-up
-{
-    opacity: 1;
-    visibility: visible;
-}
-
-
-
-                                   /*-----Main-----*/
-main .description
-{
-    display: inline-block;
-    width: 49.5%;
-    height: 68vh;
-    background-color: whitesmoke;
-    margin-right: 0px;
-}
-
-main .picture
-{
-    display: inline-block;
-    position: absolute;
-    left: 50%;
-    width: 50%;
-    top: 1;
-    height: 68vh;
-    background-color: whitesmoke;
-}
-
-main .picture::after
-{
-    position: absolute;
-    content: '';
-    width: 1000%;
-    height: 100%;
-    background-color: #00a15e;  
-    transform: skewX(45deg);
-    top: 0;
-    left:0;
-}
-
-.cercle
-{
-    background: whitesmoke;
-    position: relative;
-    z-index: 2;
-    border-radius: 50%;
-    width: 160px;
-    height: 160px;
-    border:2px solid #00a15e
-}
-
-main .picture img
-{
-    position: relative;
-    width: 100%;
-    z-index: 4;
-    background-color: #00a15e;
-   
-
-}
-
-
-
-
-                                  /*-----Footer-----*/
-footer
+/*XXXXXXXXXXXXXXXX Barre de navigation XXXXXXXXXXXXX*/
+nav
 {
     display: flex;
-    flex-direction: column;
-    background-color: #00a15e;
-    padding: 1em;
-    color: white;
-    font-family: "Kaushan Script", cursive, sans-serif;
-    font-weight: bold;
-    font-size: 1.2em;
+    justify-content: center;
     align-items: center;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    padding: 25px;
+    transition: all 0.5s ease;
+    background-color: var(--black-400);
 }
-footer p
+
+       /*logo*/
+.logo a 
 {
-    margin-top: 5px;
+    font-size: 2em;
+    color: black;
+    font-weight: 600;
+    text-transform: capitalize;
 }
+
+.logo a span
+{
+    color: var(--main-color);
+}
+
+.links
+{
+    width: 60%;
+    
+}
+
+.links ul
+{
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+
+}
+
+.links li 
+{
+display: flex;
+justify-content: left;
+
+margin-right: 2em;
+padding: 1em;
+display :block;
+border: #000 1px solid ;
+}
+
+.links  .current-page
+{
+    width: 100px;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    
+    bottom: 0;
+    left: 0;
+    border-radius: 50px;
+   
+   
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*XXXXXXXXXXXXXXXX Gallery XXXXXXXXXXXXX*/
+.Gallery-section
+{
+    min-width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+#Gallery-section h3
+{
+    display: flex;
+    justify-content: center;
+    font-size: 1.5em;
+    color: var(--main-color);
+    min-width: 100%;
+
+}
+
+#Gallery-section .categories
+{
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+#Gallery-section .categories button
+{
+    text-transform: uppercase;
+    outline: none;
+    border: 2px solid;
+    border-color: var(--main-color);
+    padding: 8px;
+    font-weight: 600;
+    border-radius: 5px;
+    background-color: white;
+    margin: 1em;
+    color: var(--main-color);
+    margin-bottom: 20px;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+
+#Gallery-section .Images
+{
+    display: flex;
+    min-width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+#Gallery-section .Images .row
+{
+    display: flex;
+    min-width: 100%;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+#Gallery-section .Images .Container-gallery-image
+{
+    display: inline-block;
+    margin: 0 auto;
+}
+
+#Gallery-section .Images .Container-gallery-image:hover
+{
+    box-shadow:  0px 0px 2em 1em var(--main-color);
+    border: 3px solid var(--main-color);
+}
+
+img
+{
+    height: auto;
+    width: auto;
+    max-width: 400px;
+    max-height: 350px;
+}
+
+/*XXXXXXXXXXXXXXXX Ticket XXXXXXXXXXXXX*/
+#Ticket-section
+{
+    min-width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+#Ticket-section .all-ticket
+{
+    
+    display: flex;
+    flex-direction: row;
+   justify-content: space-between;
+}
+
+#Ticket-section .main-title
+{
+    display: flex;
+    align-items: center;
+    font-size: 2em;
+    color: black;
+    min-width: 100%;
+    margin: 1em;
+    text-align: center;
+}
+
+#Ticket-section .Titres h2
+{
+    color: var(--main-color);
+    margin-top: 2em;
+}
+
+#Ticket .Ticket-container
+{
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    padding: 30px;
+    margin: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.pricing-plan
+{
+    box-shadow: var(--shadow-black-100);
+    border-radius: 50%;
+    overflow: hidden;
+    width: 100%;
+}
+
+
+#Ticket-section .Ticket-container .ticket-header
+{
+    padding: 20px 30px;
+    border-bottom: 1px solid black;
+    position: relative;
+}
+
+
+.Ticket-container .ticket-header h3
+{
+    font-size: 2em;
+    color: var black;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+.Ticket-container .ticket-price
+{
+    padding: 40px 30px;
+    display: flex;
+    line-height: 0.7;
+}
+.Ticket-container .ticket-price .monnaie
+{
+    font-size: 1em;
+    font-weight: bold;
+    color: var(--black-400);
+    margin-left: 10px;
+    align-self: flex-start;
+}
+.Ticket-container .ticket-price .price-entire 
+{
+    font-size: 3.5em;
+    font-weight: 700;
+    color: var(--main-color);
+}
+.Ticket-container .ticket-price .price-centime
+{
+    font-size: 2em;
+    font-weight: bold;
+    color: var(--main-color);
+    margin-left: 0.5em;
+    align-self: flex-start;
+}
+.Ticket-container .ticket-price .number-person
+{
+    font-size: 1em;
+    font-weight: bold;
+    color: var(--black-400);
+    margin-right: 5px;
+    align-self: flex-end;
+    text-transform: uppercase;
+}
+
+.Ticket-container .ticket-body ul li:last-child
+{
+    border-bottom: none;
+}
+
+.Ticket-container .ticket-body li
+{
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--black-400);
+    padding: 10px 0 10px 30px;
+    border-bottom: 1px solid var(--black-alpha-100);
+    line-height: 26px;
+    position: relative;
+}
+
+.Ticket-container .ticket-body  i
+{
+    color: var(--main-color);
+    font-size: 1em;
+      
+}
+
+.Ticket-container .ticket-footer
+{
+    padding: 50px;
+    text-align: center;
+}
+
+.Ticket-container .ticket-button
+{
+    background-color: white;
+    padding: 10px 30px;
+   
+    color: var(--main-color);
+    border-radius: 50%;
+    font-size: 1em;
+    text-transform: capitalize;
+    font-weight: bold;
+    border: 2px solid var(--main-color);
+    transition: all 0.3s ease-out;
+}
+
+.Ticket-container .ticket-button:hover, .Ticket-container   #active
+{
+    background-color: var(--main-color);
+    color: white;
+}
+
+
+
+/*XXXXXXXXXXXXXXXX Contact XXXXXXXXXXXXX*/
+.contact-section
+{
+    min-height: 100vh;
+    background-color: var(--black-100);
+}
+.contact-section .contact-item
+{
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.contact-section .contact-item-inner
+{
+    padding: 30px 15px;
+    text-align: center;
+    box-shadow: var(--shadow-black-100);
+    border-radius: 5px;
+    width: 100%;
+}
+.contact-section .contact-item-inner i
+{
+    font-size: 25px;
+    color: var(--main-color);
+}
+.contact-section .contact-item-inner span
+{
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--black-900);
+    margin: 15px 0 10px;
+    text-transform: capitalize;
+}
+.contact-section .contact-item-inner p
+{
+    font-size: 16px;
+    color: var(--black-400);
+    line-height: 26px;
+    margin: 0;
+}
+.contact-section .contact-form
+{
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-top: 50px;
+}
+.contact-section .w-50
+{
+    padding: 0 15px;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.contact-section .input-group
+{
+    margin: 0 0 25px;
+    border-radius: 30px;
+    background-color: var(--black-100);
+    box-shadow: var(--shadow-black-100);
+}
+.contact-section .input-group .input-control
+{
+    height: 45px;
+    display: block;
+    width: 100%;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 16px;
+    padding: 0 15px;
+    transition: all 0.3s ease;
+    color: var(--black-400);
+}
+.contact-section .input-group textarea.input-control
+{
+    height: 180px;
+    padding-top: 15px;
+    resize: none;
+}
+.contact-section .input-group .input-control:focus
+{
+    border: 1px solid var(--main-color);
+}
+.contact-section .submit-btn
+{
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: right;
+    padding: 0 15px;
+}
+
+
+/*XXXXXXXXXXXXXXXX Footer XXXXXXXXXXXXX*/
+footer
+{
+    background-color: var(--main-color);
+}
+footer .copyright-text1
+{
+    padding-top: 1em;
+    font-size: 1.2em;
+    color: white;
+    font-weight: 300;
+    margin: 0.5em;
+    text-align: center;
+}
+
+footer .copyright-text2
+{
+    padding-bottom: 1em;
+    font-size: 1.2em;
+    color: white;
+    font-weight: 300;
+    margin: 0.5em;
+    text-align: center;
+}
+
+
+ 
+
+
 /*-----ADAPTTION-----*/
 @media (min-width: 700px)
 {

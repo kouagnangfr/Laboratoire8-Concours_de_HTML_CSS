@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Laboratoire 8</title>
-    <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/styles.css">
     <script src="https://kit.fontawesome.com/57f747ccdf.js" crossorigin="anonymous"></script>
 </head>
@@ -12,57 +11,312 @@
     <header>
         <nav>
             <div class="logo">
-                <a href="">College <span>la cite</span></a>
+                <a href="">College <span>La cite</span></a>
             </div>
-            <ul class="navigation-bar">
-                <li >   
-                    <a href="index.html" class="active">
-                        <span class="active-up"></span>
-                        <span class="icon"><i class="fa-solid fa-house"></i></span>
-                        <span class="text">Home</span>
-                        <span class="active-down"></span>
-                    </a>
-                </li>
-                <li>
-                    <a href="index.html">
-                        <span class="active-up"></span>
-                        <span class="icon"><i class="fa-solid fa-image"></i></span>
-                        <span class="text">Gallery</span>
-                        <span class="active-down"></span>
-                    </a>
-                </li>
-                <li>
-                    <a href="index.html">
-                        <span class="active-up"></span>
-                        <span class="icon"><i class="fa-solid fa-cart-shopping fa-beat"></i></span>
-                        <span class="text">Ticket</span>
-                        <span class="active-down"></span>
-                    </a>
-                </li>
-                <li>
-                    <a href="index.html">
-                        <span class="active-up"></span>
-                        <span class="icon"><i class="fa-solid fa-address-book"></i></span>
-                        <span class="text">Contact</span>
-                        <span class="active-down"></span>
-                    </a>
-                </li>
-                
-            </ul>
+            <div class="links">
+                <ul>
+                    <li>
+                        <a href="" class="active">
+                            <span class="icon"><i class="fa-solid fa-house"></i></i></span> Home
+                            <span class="current-page"></span>
+                            
+                        </a>
+                        
+                    </li>
+                    <li>
+                        <a href="" >
+                            <span class="icon"><i class="fa-solid fa-image"></i></span> Gallery
+                            <span class="current-page"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" >
+                            <span class="icon"><i class="fa-sharp fa-solid fa-cart-shopping fa-beat"></i></i></i></span> Ticket
+                            <span class="current-page"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" >
+                            <span class="icon"><i class="fa-solid fa-address-book"></i></span> Contact
+                            <span class="current-page"></span>
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <div class="login">
+                <span class="login-icon"><i class="fa-solid fa-user fa-shake"></i></span>
+                <a href="" login-signUp>Login/Sign-up</a>
+            </div>
         </nav>
     </header>
     <main>
-        <div class="description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem ab, earum rerum doloribus rem aliquam voluptatem, repellat nam eaque officia atque maiores blanditiis corrupti explicabo. Odio optio sunt ratione voluptas?
+        <section id="Home-section">
+
+        </section>
+
+                    <!--XXXXXX Gallery Section XXXXXX-->
+        <section id="Gallery-section">
+            <div class="Titres">
+                <h3 >Pictures of our previous editions</h3>
+                <ul class="line">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div> 
+          
+            <!--===== Images Category =====-->
+            <div class="categories">
+                <button type="button" class="active"> All</button>
+                <button type="button"> Hacking and security</button>
+                <button type="button"> Programmation</button>
+                <button type="button"> Other</button>
+            </div>
+            
+            <!-- Images1-->
+            <div class="Images">
+                <div class="row">
+                    <div class="Container-gallery-image">
+                        <div class="gallery-image">
+                            <img src="./img/image1.jpg" alt="">
+                        </div>
+                    </div>
+                    
+                    <!-- Image2 -->
+                    <div class="Container-gallery-image">
+                        <div class="gallery-image">
+                            <img src="./img/image1.jpg" alt="">
+                        </div>
+                    </div>
+                    <!-- Image3 -->
+                    <div class="Container-gallery-image">
+                        <div class="gallery-image">
+                            <img src="./img/image1.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- Image4 -->
+                <div class="Container-gallery-image">
+                    <div class="gallery-image">
+                        <img src="./img/image1.jpg" alt="">
+                    </div>
+                </div>
+                <!-- Image5 -->
+                <div class="Container-gallery-image">
+                    <div class="gallery-image">
+                        <img src="./img/image1.jpg" alt="">
+                    </div>
+                </div>
+                <!-- Image6 -->
+                <div class="Container-gallery-image">
+                    <div class="gallery-image">
+                        <img src="./img/image1.jpg" alt="">
+                    </div>
+                </div>
+                </div>
+            </div>    
+        </section>
+    
+
+
+
+
+
+
+
+
+
+
+
+        
+        <section id="Ticket-section">
+            <div class="Titres">
+                <h2>Tickets</h2>
+                <h3 class="main-title">Ticket plans</h3>
+                <ul class="line">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div> 
+                <!--All tickets-->
+            <div class="all-ticket">
+                    <!-- ticket 1 -->
+                <div class="Ticket-container">
+                    <div class="pricing-plan">
+                        <div class="ticket-header">
+                            <h3>Single</h3>
+                        </div>
+                        <div class="ticket-price">
+                            <span class="monnaie">$</span>
+                            <span class="price-entire">24</span>
+                            <span class="price-centime">99</span>
+                            <span class="number-person"> / Person</span>
+                        </div>
+                        <div class="ticket-body">
+                            <ul>
+                                <li><i class="fa-sharp fa-solid fa-circle-check"></i> 5 GB BandWidth </li>
+                                <li><i class="fa-sharp fa-solid fa-circle-check"></i> 5 GB BandWidth </li>
+                                <li><i class="fa-sharp fa-solid fa-circle-check"></i> 5 GB BandWidth </li>
+                                <li><i class="fa-sharp fa-solid fa-circle-check"></i> 5 GB BandWidth </li>
+                                <li><i class="fa-sharp fa-solid fa-circle-check"></i> 5 GB BandWidth </li>
+                            </ul>
+                        </div>
+                        <div class="ticket-footer">
+                            <a href="#" class="ticket-button">Buy ticket</a>
+                        </div>
+                    </div>
+                </div>
+                        <!-- ticket2 -->
+                <div class="Ticket-container">
+                    <div class="pricing-plan">
+                        <div class="ticket-header">
+                            <h3>Couple</h3>
+                        </div>
+                        <div class="ticket-price">
+                            <span class="monnaie">$</span>
+                            <span class="price-entire">45</span>
+                            <span class="price-centime">99</span>
+                            <span class="number-person"> / 2 persons</span>
+                        </div>
+                        <div class="ticket-body">
+                            <ul>
+                                <li><i class="fa-sharp fa-solid fa-circle-check"></i> 5 GB BandWidth </li>
+                                <li><i class="fa-sharp fa-solid fa-circle-check"></i> 5 GB BandWidth </li>
+                                <li><i class="fa-sharp fa-solid fa-circle-check"></i> 5 GB BandWidth </li>
+                                <li><i class="fa-sharp fa-solid fa-circle-check"></i> 5 GB BandWidth </li>
+                                <li><i class="fa-sharp fa-solid fa-circle-check"></i> 5 GB BandWidth </li>
+                                <li><i class="fa-sharp fa-solid fa-circle-check"></i> Save 5$ </li>
+                            </ul>
+                        </div>
+                        <div class="ticket-footer active">
+                            <a href="#" class="ticket-button " id="active">Buy ticket</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- ticket 3 -->
+                <div class="Ticket-container">
+                    <div class="pricing-plan">
+                        <div class="ticket-header">
+                            <h3>VIP</h3>
+                        </div>
+                        <div class="ticket-price">
+                            <span class="monnaie">$</span>
+                            <span class="price-entire">149</span>
+                            <span class="price-centime">99</span>
+                            <span class="number-person"> / Person</span>
+                        </div>
+                        <div class="ticket-body">
+                            <ul>
+                                <li><i class="fa-sharp fa-solid fa-circle-check"></i> 5 GB BandWidth </li>
+                                <li><i class="fa-sharp fa-solid fa-circle-check"></i> 5 GB BandWidth </li>
+                                <li><i class="fa-sharp fa-solid fa-circle-check"></i> 5 GB BandWidth </li>
+                                <li><i class="fa-sharp fa-solid fa-circle-check"></i> 5 GB BandWidth </li>
+                                <li><i class="fa-sharp fa-solid fa-circle-check"></i> 5 GB BandWidth </li>
+                            </ul>
+                        </div>
+                        <div class="ticket-footer">
+                            <a href="#" class="ticket-button">Buy ticket</a>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+        </section>
+        
+
+
+
+
+
+        <section id="Contact-section">
+             <!--===== Contact Section Start =====-->
+       <section class="contact-section section-padding" id="contact">
+        <div class="container">
+         <div class="row">
+             <div class="section-title text-align">
+                 <h5 class="sub-title">contact</h5>
+                 <h3 class="main-title">get in touch</h3>
+                 <ul class="line">
+                     <li></li>
+                     <li></li>
+                     <li></li>
+                 </ul>
+             </div> <!--===== Section Title =====-->
+           </div>
+           <div class="row">
+               <!--===== contact item start =====-->
+               <div class="contact-item">
+                   <div class="contact-item-inner">
+                       <i class="fas fa-phone"></i>
+                       <span>Phone</span>
+                       <p>03498309488</p>
+                   </div>
+               </div>
+               <!--===== contact item end =====-->
+               <!--===== contact item start =====-->
+                <div class="contact-item">
+                 <div class="contact-item-inner">
+                     <i class="fas fa-envelope"></i>
+                     <span>Email</span>
+                     <p>codercryptical@gmail.com</p>
+                 </div>
+             </div>
+              <!--===== contact item end =====-->
+              <!--===== contact item start =====-->
+              <div class="contact-item">
+                 <div class="contact-item-inner">
+                     <i class="fas fa-map-marker-alt"></i>
+                     <span>Address</span>
+                     <p>Rawalpindi</p>
+                 </div>
+             </div>
+              <!--===== contact item end =====-->
+           </div>
+              <!--===== Contact Form =====-->
+           <div class="row">
+               <div class="contact-form">
+                   <form action="">
+                       <div class="row">
+                           <div class="w-50">
+                               <div class="input-group">
+                                   <input type="text" placeholder="Name" class="input-control">
+                               </div>
+                               <div class="input-group">
+                                 <input type="email" placeholder="Email" class="input-control">
+                             </div>
+                             <div class="input-group">
+                                 <input type="text" placeholder="Subject" class="input-control">
+                             </div>
+                           </div>
+                           <div class="w-50">
+                               <div class="input-group">
+                                   <textarea name="" class="input-control" placeholder="Message" id="" cols="30" rows="10"></textarea>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="row">
+                           <div class="submit-btn">
+                               <button type="submit" class="btn-1">Send Message</button>
+                           </div>
+                       </div>
+                   </form>
+               </div>
+           </div>
         </div>
-        <div class="picture">
-           <div class="cercle"></div>
-           <div><img src="./img/image1.jpg" alt="Image"></div>
-        </div>
+    </section>
     </main>
+
+
+
+    
     <footer>
-        <p>&copy;Kouagnang Franck & Sotodonu Otniel</p>
-        <p>&copy;2023 College la cite</p>
+        <div class="container">
+                <p class="copyright-text1">&copy; 2021 by Kouagnang Franck & Otnile christin</p>
+                <p class="copyright-text2">&copy; 2023College la cite</p>
+        </div>
     </footer>
+ 
 </body>
 </html>
