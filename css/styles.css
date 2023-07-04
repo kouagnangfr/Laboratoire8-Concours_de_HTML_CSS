@@ -483,6 +483,24 @@ img
     padding: 0 15px;
 }
 
+.btn-1
+{
+    background-color: var(--main-color);
+    padding: 15px 40px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 600;
+    transition: all 0.3s ease-out;
+}
+.btn-1:hover
+{
+    color: var(--white);
+    background-color: rgba(0,167,142,0.7);
+}
+
 
 /*XXXXXXXXXXXXXXXX Footer XXXXXXXXXXXXX*/
 footer
