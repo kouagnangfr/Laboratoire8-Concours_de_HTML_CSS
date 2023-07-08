@@ -9,63 +9,116 @@
 </head>
 <body>
     <header>
+                        <!--XXXXXXXXXXXXXXXX Navigation Bar XXXXXXXXXXXXX-->                    
         <nav>
             <div class="logo">
                 <a href="">College <span>La cite</span></a>
             </div>
             <div class="links">
                 <ul>
-                    <li>
-                        <a href="" class="active">
+                    <li class="l1">
+                        <a href="#Home-section" class="active">
                             <span class="icon"><i class="fa-solid fa-house"></i></i></span> Home
                             <span class="current-page"></span>
-                            
+                            <ul class="line">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
                         </a>
                         
                     </li>
-                    <li>
-                        <a href="" >
+                    <li class="l1">
+                        <a href="#Gallery-section" >
                             <span class="icon"><i class="fa-solid fa-image"></i></span> Gallery
                             <span class="current-page"></span>
                         </a>
+                        <ul class="line">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
                     </li>
-                    <li>
-                        <a href="" >
+                    <li class="l1">
+                        <a href="#Ticket-section" >
                             <span class="icon"><i class="fa-sharp fa-solid fa-cart-shopping fa-beat"></i></i></i></span> Ticket
                             <span class="current-page"></span>
                         </a>
+                        <ul class="line">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
                     </li>
-                    <li>
-                        <a href="" >
+                    <li class="l1">
+                        <a href="#Contact-section" >
                             <span class="icon"><i class="fa-solid fa-address-book"></i></span> Contact
                             <span class="current-page"></span>
                         </a>
+                        <ul class="line">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
                     </li>
                     
                 </ul>
             </div>
             <div class="login">
-                <span class="login-icon"><i class="fa-solid fa-user fa-shake"></i></span>
-                <a href="" login-signUp>Login/Sign-up</a>
+                <a href="Login_SignUp.html" class="login/signup">
+                    <span class="login-icon"><i class="fa-solid fa-user fa-shake"></i></span><span class="s-log">Login/Sign-up</span>
+                </a>
+            </div>
+            <div class="theme">
+                <i class="fa-regular fa-moon-cloud"></i>
             </div>
         </nav>
     </header>
+    
+    
+    
+    
+    
     <main>
-        <section id="Home-section">
 
+
+
+
+                    <!--XXXXXXXXXXXXXXXX Home XXXXXXXXXXXXX-->
+        <section id="Home-section">
+            <div class="home-container3">
+                <div id="circle2"></div>
+            </div>
+            <div class="home-container1">
+                <P class="p1"><span class="sp1">The College of Applied Arts and Technology</span> 
+                    <br>is hosting a <h1>Computer Maintenance Seminar</h1><span class="sp2">August  <span id="date">15</span>2023</span></P>
+                    <P class="address">at its Ottawa campus 801 Aviation Pkwy</P>
+                <p class="p2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium corrupti, numquam mollitia 
+                    nihil iste sapiente dignissimos error unde autem eligendi dolorum assumenda voluptate sit nulla quae impedit 
+                    officiis at accusantium!
+                </p>
+                <div id="home-button"><a href="#Ticket-section"><button type="submit" class="home-button">Buy your ticket</button></a></div>
+            </div>
+            <div class="home-container2">
+                <div id="circle1"></div>
+            </div>
         </section>
 
-                    <!--XXXXXX Gallery Section XXXXXX-->
+
+
+
+                    <!--XXXXXXXXXXXXXXXX Gallery XXXXXXXXXXXXX-->
         <section id="Gallery-section">
-            <div class="Titres">
-                <h3 >Pictures of our previous editions</h3>
+            <div class="Section-titles">
+                <h2>Gallery</h2>
+                <h3 class="main-title">Olds session pictures</h3>
                 <ul class="line">
                     <li></li>
                     <li></li>
                     <li></li>
                 </ul>
             </div> 
-          
             <!--===== Images Category =====-->
             <div class="categories">
                 <button type="button" class="active"> All</button>
@@ -73,68 +126,75 @@
                 <button type="button"> Programmation</button>
                 <button type="button"> Other</button>
             </div>
-            
-            <!-- Images1-->
+            <p>Click to enlarge the image</p>
             <div class="Images">
-                <div class="row">
-                    <div class="Container-gallery-image">
-                        <div class="gallery-image">
-                            <img src="./img/image1.jpg" alt="">
-                        </div>
-                    </div>
-                    
-                    <!-- Image2 -->
-                    <div class="Container-gallery-image">
-                        <div class="gallery-image">
-                            <img src="./img/image1.jpg" alt="">
-                        </div>
-                    </div>
-                    <!-- Image3 -->
-                    <div class="Container-gallery-image">
-                        <div class="gallery-image">
-                            <img src="./img/image1.jpg" alt="">
-                        </div>
+                 <!-- Images1-->
+                <div class="Container-gallery-image">
+                    <div class="gallery-image">
+                        <img src="./img/img8.jpg" alt="">
                     </div>
                 </div>
-                <div class="row">
+                <!-- Image2 -->
+                <div class="Container-gallery-image">
+                    <div class="gallery-image">
+                        <img src="./img/img12.jpg" alt="">
+                    </div>
+                </div>
+                <!-- Image3 -->
+                <div class="Container-gallery-image">
+                    <div class="gallery-image">
+                        <img src="./img/img11.jpg" alt="">
+                    </div>
+                </div>
                     <!-- Image4 -->
                 <div class="Container-gallery-image">
                     <div class="gallery-image">
-                        <img src="./img/image1.jpg" alt="">
+                        <img src="./img/img4.jfif" alt="">
                     </div>
                 </div>
                 <!-- Image5 -->
                 <div class="Container-gallery-image">
                     <div class="gallery-image">
-                        <img src="./img/image1.jpg" alt="">
+                        <img src="./img/img13.jpg" alt="">
                     </div>
                 </div>
                 <!-- Image6 -->
                 <div class="Container-gallery-image">
                     <div class="gallery-image">
-                        <img src="./img/image1.jpg" alt="">
+                        <img src="./img/img7.webp" alt="">
                     </div>
                 </div>
+                <!-- Image7 -->
+                <div class="Container-gallery-image">
+                    <div class="gallery-image">
+                        <img src="./img/img1.jfif" alt="">
+                    </div>
                 </div>
+                <!-- Image8 -->
+                <div class="Container-gallery-image">
+                    <div class="gallery-image">
+                        <img src="./img/img9.jpg" alt="">
+                    </div>
+                </div>
+                <!-- Image9 -->
+                <div class="Container-gallery-image">
+                    <div class="gallery-image">
+                        <img src="./img/img2.jpg" alt="">
+                    </div>
+                </div>
+                <p>Click to enlarge the image</p>
             </div>    
         </section>
-    
 
 
 
 
 
-
-
-
-
-
-
-        
+                    <!--XXXXXXXXXXXXXXXX Ticket XXXXXXXXXXXXX-->
         <section id="Ticket-section">
-            <div class="Titres">
-                <h2>Tickets</h2>
-                <h3 class="main-title">Ticket plans</h3>
+            <div class="Section-titles">
+                <h2>Ticket</h2>
+                <h3 class="main-title">Our pricing plan</h3>
                 <ul class="line">
                     <li></li>
                     <li></li>
@@ -157,11 +217,11 @@
                         </div>
                         <div class="ticket-body">
                             <ul>
+                                <li><i class="fa-sharp fa-solid fa-circle-check"></i> Participation </li>
                                 <li><i class="fa-sharp fa-solid fa-circle-check"></i> 5 GB BandWidth </li>
-                                <li><i class="fa-sharp fa-solid fa-circle-check"></i> 5 GB BandWidth </li>
-                                <li><i class="fa-sharp fa-solid fa-circle-check"></i> 5 GB BandWidth </li>
-                                <li><i class="fa-sharp fa-solid fa-circle-check"></i> 5 GB BandWidth </li>
-                                <li><i class="fa-sharp fa-solid fa-circle-check"></i> 5 GB BandWidth </li>
+                                <li><i class="fa-sharp fa-solid fa-circle-check"></i> Second screen </li>
+                                <li class="no"><i class="fa-solid fa-circle-xmark"></i> Access to Gamer PC </li>
+                                <li class="no"><i class="fa-solid fa-circle-xmark no"></i> meal, drink, snack </li>
                             </ul>
                         </div>
                         <div class="ticket-footer">
@@ -183,12 +243,12 @@
                         </div>
                         <div class="ticket-body">
                             <ul>
+                                <li><i class="fa-sharp fa-solid fa-circle-check"></i> Participation </li>
                                 <li><i class="fa-sharp fa-solid fa-circle-check"></i> 5 GB BandWidth </li>
-                                <li><i class="fa-sharp fa-solid fa-circle-check"></i> 5 GB BandWidth </li>
-                                <li><i class="fa-sharp fa-solid fa-circle-check"></i> 5 GB BandWidth </li>
-                                <li><i class="fa-sharp fa-solid fa-circle-check"></i> 5 GB BandWidth </li>
-                                <li><i class="fa-sharp fa-solid fa-circle-check"></i> 5 GB BandWidth </li>
+                                <li><i class="fa-sharp fa-solid fa-circle-check"></i> Second screen</li>
                                 <li><i class="fa-sharp fa-solid fa-circle-check"></i> Save 5$ </li>
+                                <li class="no"><i class="fa-solid fa-circle-xmark no"></i> Access to Gamer PC </li>
+                                <li class="no"><i class="fa-solid fa-circle-xmark no"></i> meal, drink, snack </li>
                             </ul>
                         </div>
                         <div class="ticket-footer active">
@@ -210,11 +270,11 @@
                         </div>
                         <div class="ticket-body">
                             <ul>
+                                <li><i class="fa-sharp fa-solid fa-circle-check"></i> Participation </li>
                                 <li><i class="fa-sharp fa-solid fa-circle-check"></i> 5 GB BandWidth </li>
-                                <li><i class="fa-sharp fa-solid fa-circle-check"></i> 5 GB BandWidth </li>
-                                <li><i class="fa-sharp fa-solid fa-circle-check"></i> 5 GB BandWidth </li>
-                                <li><i class="fa-sharp fa-solid fa-circle-check"></i> 5 GB BandWidth </li>
-                                <li><i class="fa-sharp fa-solid fa-circle-check"></i> 5 GB BandWidth </li>
+                                <li><i class="fa-sharp fa-solid fa-circle-check"></i> Second screen </li>
+                                <li><i class="fa-sharp fa-solid fa-circle-check"></i> Access to Gamer PC </li>
+                                <li><i class="fa-sharp fa-solid fa-circle-check"></i> meal, drink, snack </li>
                             </ul>
                         </div>
                         <div class="ticket-footer">
@@ -229,12 +289,10 @@
 
 
 
-
+                    <!--XXXXXXXXXXXXXXXX Contact XXXXXXXXXXXXX-->
         <section id="Contact-section">
-             <!--===== Contact Section Start =====-->
-       <section id="contact-section">
-            <div class="form-container">
-                <div class="Titres">
+            <div class="contact-container">
+                <div class="Section-titles">
                     <h2>Contact</h2>
                     <h3 class="main-title">To join us</h3>
                     <ul class="line">
@@ -243,6 +301,8 @@
                         <li></li>
                     </ul>
                 </div> 
+            </div>
+            <div class="contact-container">
                 <div class="contact-item">
                     <a href="#" class="contact-item-inner">
                     <i class="fa-sharp fa-solid fa-phone"></i>
@@ -265,10 +325,9 @@
                     </a>
                 </div>
             </div>
-            </div>
-           
-            <div class="form-container">      
+            <div class="contact-container">      
                 <form action="" class="contact-form">
+                    <div class="container-grp1-grp2">
                         <div class="form-group1">
                             <div class="input-form">
                                 <input type="text" placeholder="Name" class="input-control">
@@ -285,9 +344,10 @@
                                 <textarea name="" class="input-control" placeholder="Message" id="" cols="30" rows="10"></textarea>
                             </div>
                         </div>
-                        <div class="submit-form">
-                            <button type="submit" class="contact-button">Send Message</button>
-                        </div>
+                    </div>
+                    <div class="form-group3">
+                        <button type="submit" class="contact-button">Send Message</button>
+                    </div>  
                 </form>
             </div>
         </section>
@@ -295,10 +355,10 @@
 
 
 
-    
+                            <!--XXXXXXXXXXXXXXXX Footer XXXXXXXXXXXXX-->
     <footer>
         <div class="container">
-                <p class="copyright-text1">&copy; 2021 by Kouagnang Franck & Otniel christin</p>
+                <p class="copyright-text1">&copy; 2023 by Kouagnang Franck & Otniel christin</p>
                 <p class="copyright-text2">&copy; 2023College la cite</p>
         </div>
     </footer>
