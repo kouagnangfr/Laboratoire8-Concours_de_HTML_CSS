@@ -137,7 +137,7 @@ nav
     justify-content: center;
     align-items: center;
     position: fixed;
-    z-index: 999;
+    z-index: 2;
     width: 100%;
     padding: 2em;
     transition: all 0.5s ease;
@@ -465,13 +465,14 @@ img:active
 {
     align-items: center;
     position: fixed;
+    z-index: 100;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    margin: 0 auto;
+    min-width: 80%;
+    min-height: 80%;
+    margin: 3em auto;
     box-shadow:  0px 0px 2em 1em var(--main-color);
     border: 3px solid var(--main-color);
 }
